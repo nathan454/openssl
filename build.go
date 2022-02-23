@@ -20,7 +20,7 @@ package openssl
 // #cgo linux CFLAGS: -Wno-deprecated-declarations
 // #cgo darwin 386 CFLAGS: -I/usr/local/opt/openssl -I/usr/local/opt/openssl/include -Wno-deprecated-declarations
 // #cgo darwin 386 LDFLAGS: -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/openssl/lib -lssl -lcrypto
-// #cgo darwin arm64 CFLAGS: -I/opt/homebrew/opt/openssl/include -I/opt/homebrew/opt/openssl/include -Wno-deprecated-declarations
-// #cgo darwin arm64 LDFLAGS: -L/opt/homebrew/opt/openssl//lib -L/opt/homebrew/opt/openssl/lib -lssl -lcrypto
+// #cgo darwin arm64 CFLAGS: -I/opt/homebrew/opt/openssl@1.1/include -I/opt/homebrew/opt/openssl/include -Wno-deprecated-declarations
+// #cgo darwin arm64 LDFLAGS: -L/opt/homebrew/opt/openssl@1.1/lib-L/opt/homebrew/opt/openssl/lib -lssl -lcrypto
 // #cgo windows CFLAGS: -DWIN32_LEAN_AND_MEAN
 import "C"
